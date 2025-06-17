@@ -1,6 +1,6 @@
 {
   "name": "create-visall-layer-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create VISALL Layer demo project - 一键创建VISALL Layer演示项目",
   "main": "index.js",
   "bin": {
@@ -27,4 +27,4 @@
     "url": "https://github.com/gongyuzhouchang/visall-layer-demo.git",
     "directory": "create-package"
   }
-} 
+}
