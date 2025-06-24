@@ -1,0 +1,132 @@
+.theme-container {
+  --theme-button: url(./img/翻页.svg);
+  --theme-more: url(./img/省略.svg);
+  --theme-fast: url(./img/快速翻页.svg);
+  --theme-button-disabled: url(./img/翻页disabled.svg);
+  --theme-background-color-disabled: #e9edf0;
+  --theme-background-color: #fff;
+  --theme-border-color: #dedede;
+  --theme-background-color-selected: #E7EAFA;
+  --theme-font-color-selected: #636FFF;
+  --theme-border-color-selected: #636FFF;
+  --theme-background-color-hover: #f5f5f5;
+  --theme-font-color-hover: rgba(0, 0, 0, 0.85);
+  --theme-font-color: #313438;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 4px 0px;
+  justify-content: flex-end;
+  font-size: 14px;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--theme-font-color);
+  line-height: 22px;
+  font-weight: 400;
+
+  .prev-button {
+    min-width: 24px;
+    min-height: 24px;
+    background-image: var(--theme-button);
+    background-position: center;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+  }
+
+  .prev-button-disabled {
+    background-image: var(--theme-button-disabled);
+    background-color: var(--theme-background-color-disabled);
+    border-color: var(--theme-border-color);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    cursor: not-allowed;
+  }
+
+  .next-button {
+    min-width: 24px;
+    min-height: 24px;
+    background-image: var(--theme-button);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .next-button-disabled {
+    background-image: var(--theme-button-disabled);
+    background-color: var(--theme-background-color-disabled);
+    border-color: var(--theme-border-color);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    cursor: not-allowed;
+  }
+
+  .left-page {
+    min-width: 24px;
+    min-height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: var(--theme-more);
+    cursor: pointer;
+  }
+
+  .left-page:hover {
+    background-image: var(--theme-fast);
+    transform: rotate(180deg);
+  }
+
+  .right-page {
+    min-width: 24px;
+    min-height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image: var(--theme-more);
+  }
+
+  .right-page:hover {
+    background-image: var(--theme-fast);
+  }
+
+  .button {
+    min-width: 24px;
+    min-height: 24px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-background-color);
+    border-color: var(--theme-border-color);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: var(--theme-background-color-hover);
+    color: var(--theme-font-color-hover);
+  }
+
+  .current-page {
+    min-width: 24px;
+    min-height: 24px;
+    border-radius: 4px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--theme-border-color-selected);
+    background-color: var(--theme-background-color-selected);
+    color: var(--theme-font-color-selected);
+    cursor: default;
+  }
+}
+
+.wrapper > :not(:first-child) {
+  margin-left: 8px;
+} 

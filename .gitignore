@@ -1,0 +1,10 @@
+# packages
+/packages/*/node_modules
+/packages/*/dist
+/packages/*/build
+/packages/*/types
+/packages/*/coverage
+/packages/*/docs-html
+/packages/*/stats.html
+/packages/*/log
+/packages/core
